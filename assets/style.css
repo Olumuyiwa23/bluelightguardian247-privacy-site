@@ -1,5 +1,5 @@
 
-/* Simple, accessible styling for GitHub Pages */
+/* Simple, accessible styling for GitHub Pages 
 :root{--brand:#0b3d91;--muted:#6b7280;--bg:#f7f9fc}
 *{box-sizing:border-box}
 body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.6;margin:0;background:var(--bg);color:#111}
@@ -17,4 +17,78 @@ main{background:#fff;margin:24px auto;padding:28px;border-radius:8px;box-shadow:
 .site-footer{padding:20px 0;text-align:center;color:var(--muted)}
 .small{font-size:0.95rem;color:var(--muted)}
 .notice{background:#fff7cc;border-left:6px solid #ffcf00;padding:12px;margin:16px 0;border-radius:6px}
-@media(max-width:720px){.nav-inner{flex-direction:column;gap:8px}.menu{flex-wrap:wrap;justify-content:center}}
+@media(max-width:720px){.nav-inner{flex-direction:column;gap:8px}.menu{flex-wrap:wrap;justify-content:center}} */
+
+
+/* Modern app-landing style - Blue gradient theme (Option 1) */
+:root{
+  --bg:#f4f7fb;
+  --brand1:#3b82f6;
+  --brand2:#0ea5e9;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --radius:14px;
+  --container:1100px;
+  --glass: rgba(255,255,255,0.7);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; color:#0f1724;background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:var(--brand1);text-decoration:none}
+.container{max-width:var(--container);margin:0 auto;padding:28px}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--brand1),var(--brand2));color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 6px 24px rgba(11,61,145,0.12)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 28px}
+.brand{font-weight:700;font-size:1.1rem;color:#fff;text-decoration:none}
+.nav a{color:rgba(255,255,255,0.9);margin-left:20px;padding:8px;border-radius:8px}
+.nav a.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.12);padding:8px 12px}
+.nav a:hover{background:rgba(255,255,255,0.08)}
+
+/* Hero */
+.hero{background:linear-gradient(180deg, rgba(59,130,246,0.12), rgba(14,165,233,0.04));padding:48px 0 0 0;position:relative;overflow:visible}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;padding:18px 28px}
+.hero-content h1{font-size:2.1rem;margin:0 0 12px;color:var(--brand1)}
+.lead{font-size:1.05rem;color:var(--muted);margin-bottom:18px}
+.cta-row{display:flex;gap:12px;margin-bottom:12px}
+.btn-primary{background:linear-gradient(90deg,var(--brand1),var(--brand2));color:#fff;padding:12px 18px;border-radius:10px;display:inline-block;font-weight:600;box-shadow:0 8px 18px rgba(14,165,233,0.12)}
+.btn-ghost{border:1px solid rgba(15,23,36,0.06);padding:12px 18px;border-radius:10px;background:#fff}
+.small{font-size:0.9rem;color:var(--muted)}
+
+.hero-cards{display:flex;flex-direction:column;gap:14px}
+.card.stat{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(11,61,145,0.06)}
+.stat-number{font-weight:700;color:var(--brand1);margin-bottom:6px}
+.stat-desc{color:var(--muted);font-size:0.95rem}
+
+/* Wave */
+.hero-wave{display:block;width:100%;height:64px;margin-top:18px}
+
+/* Content Cards */
+.cards-section{margin-top:28px;padding-bottom:48px}
+.cards-section h2{margin-top:0;color:var(--brand1)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(11,61,145,0.04)}
+.card h3{margin-top:0;color:var(--brand2)}
+.card p{color:var(--muted);margin:8px 0}
+
+/* Feature grid */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.feature{background:linear-gradient(180deg, #fff, #fbfdff);padding:14px;border-radius:10px;border:1px solid rgba(11,61,145,0.04)}
+.feature h4{margin:0 0 6px;color:var(--brand1)}
+.notes{margin-top:22px;padding:14px}
+
+/* Footer */
+.site-footer{background:transparent;padding:22px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footer-left strong{color:var(--brand1)}
+.footer-right a{margin-left:12px;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+  .header-inner{flex-direction:column;gap:8px;align-items:start}
+  .nav a{margin-left:10px}
+  .hero-content h1{font-size:1.6rem}
+}
