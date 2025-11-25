@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- !doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -118,5 +118,135 @@
   </div>
 </footer>
 
+</body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blue Guardian – Privacy & Data</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Blue Guardian – Privacy Policy and legal pages for the wellbeing app developed by Bournemouth University.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><strong>Blue</strong> Guardian</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="data-safety.html">Data Safety</a>
+        <a href="appstore-summary.html">App Store</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Privacy & Data — built for blue light wellbeing</h1>
+          <p class="lead">Blue Guardian (formerly HantsPol) helps blue light personnel track wellbeing, shifts and hydration — safely and privately. This page summarises what we collect, why, and your rights under UK GDPR.</p>
+          <p class="cta-row">
+            <a class="btn-primary" href="index.html#privacy-details">Read Privacy Policy</a>
+            <a class="btn-ghost" href="terms.html">View Terms &amp; Conditions</a>
+          </p>
+          <p class="small muted">Operated by Bournemouth University • Bournemouth University, Fern Barrow, BH12 5BB</p>
+        </div>
+
+        <div class="hero-cards" aria-hidden="true">
+          <div class="card stat">
+            <div class="stat-number">Data minimised</div>
+            <div class="stat-desc">Only what's needed for core features</div>
+          </div>
+          <div class="card stat">
+            <div class="stat-number">Encrypted</div>
+            <div class="stat-desc">In transit &amp; at rest</div>
+          </div>
+          <div class="card stat">
+            <div class="stat-number">Consent-based</div>
+            <div class="stat-desc">Health data processed only with explicit consent</div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,120 1200,0 1440,60 L1440 100 L0 100 Z" fill="#ffffff"></path>
+      </svg>
+    </section>
+
+    <section id="privacy-details" class="container cards-section" aria-labelledby="at-a-glance">
+      <h2 id="at-a-glance">At a glance</h2>
+      <p class="muted">Quickly find the information reviewers and users need.</p>
+
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <h3>What we collect</h3>
+          <p>Email, shift schedules, journal entries, wellbeing logs (sleep, hydration, activity, nutrition). Device diagnostics & crash logs for stability.</p>
+          <p class="small">No location tracking, no contacts, no photos or financial data collected.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>Why we collect it</h3>
+          <p>To provide the app features (shift manager, wellbeing tracking), improve performance, and provide support. Health data only with consent for personalised insights.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>How we protect it</h3>
+          <p>HTTPS/TLS in transit, encryption at rest, restricted access, and minimal retention policies. Crash logs retained briefly for diagnostics.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>Your rights</h3>
+          <p>Access, correction, deletion, portability, withdraw consent, and lodge complaints with the ICO. Contact: <a href="mailto:ayorindeo@bournemouth.ac.uk">ayorindeo@bournemouth.ac.uk</a></p>
+        </article>
+      </div>
+
+      <div class="feature-grid" aria-hidden="true">
+        <div class="feature">
+          <h4>GDPR & UK law</h4>
+          <p>We process data under consent, performance of contract, legitimate interests and legal obligations.</p>
+        </div>
+        <div class="feature">
+          <h4>Data sharing</h4>
+          <p>No sale of personal data. Shared only with hosting and analytics providers under contracts and SCCs where needed.</p>
+        </div>
+        <div class="feature">
+          <h4>Retention</h4>
+          <p>Account data while active; logs and diagnostics typically up to 90 days unless otherwise required.</p>
+        </div>
+      </div>
+
+      <div class="notes">
+        <h3>Note for reviewers</h3>
+        <p class="muted">This page is designed to be clear for App Store / Play Console reviewers and ethics boards. Use the links above to access full policy, terms and data safety pages.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Blue Guardian</strong> • Bournemouth University
+        <div class="small">Bournemouth University, Fern Barrow, BH12 5BB</div>
+      </div>
+      <div class="footer-right">
+        <a href="BlueGuardian_PrivacyPolicy.pdf" class="small">Download Privacy (PDF)</a>
+        <a href="BlueGuardian_Terms.pdf" class="small">Download Terms (PDF)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small accessibility helper: add class for keyboard users
+    document.addEventListener('keyup', function(e){
+      if(e.key === 'Tab') document.body.classList.add('user-is-tabbing');
+    });
+  </script>
 </body>
 </html>
